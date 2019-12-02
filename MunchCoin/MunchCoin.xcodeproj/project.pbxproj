@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D5181868A8EAF452920A90E /* Pods_MunchCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE8BF56424817E721278F26 /* Pods_MunchCoinUITests.framework */; };
+		8B02FD28236A3A6800F9AA4D /* Eatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02FD27236A3A6800F9AA4D /* Eatery.swift */; };
+		8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02FD29236A3C2B00F9AA4D /* Category.swift */; };
+		8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F4D231B6B5A00CBDEF2 /* AppDelegate.swift */; };
+		8B0D0F52231B6B5A00CBDEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F51231B6B5A00CBDEF2 /* ViewController.swift */; };
+		8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F56231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld */; };
+		8B0D0F5A231B6B5D00CBDEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0D0F59231B6B5D00CBDEF2 /* Assets.xcassets */; };
+		8B0D0F5D231B6B5D00CBDEF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0D0F5B231B6B5D00CBDEF2 /* LaunchScreen.storyboard */; };
+		8B0D0F68231B6B5E00CBDEF2 /* MunchCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F67231B6B5E00CBDEF2 /* MunchCoinTests.swift */; };
+		8B0D0F73231B6B5E00CBDEF2 /* MunchCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F72231B6B5E00CBDEF2 /* MunchCoinUITests.swift */; };
+		8B0D0F8C231C67EB00CBDEF2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0D0F8B231C67EB00CBDEF2 /* MapKit.framework */; };
+		8B0D0F8E231C68C500CBDEF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B0D0F8D231C68C400CBDEF2 /* GoogleService-Info.plist */; };
+		8B327249238F72E500630268 /* EateryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B327248238F72E500630268 /* EateryViewController.swift */; };
+		8B32724B238F735500630268 /* EateryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724A238F735500630268 /* EateryTableViewDataSource.swift */; };
+		8B32724D238F736600630268 /* EateryTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724C238F736600630268 /* EateryTableViewDelegate.swift */; };
+		8B32724F238F75EE00630268 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724E238F75EE00630268 /* Network.swift */; };
+		8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFA1D2325D22300147F86 /* Coordinator.swift */; };
+		8B4F0B012390784100EE1126 /* EateryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B002390784100EE1126 /* EateryTableViewCell.swift */; };
+		8B4F0B032390785A00EE1126 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B022390785A00EE1126 /* CategoryTableViewCell.swift */; };
+		8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B042390789100EE1126 /* CategoryCollectionViewCell.swift */; };
+		8B4F0B0C2390E18800EE1126 /* BRLNSR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8B4F0B0A2390E18800EE1126 /* BRLNSR.TTF */; };
+		8B4F0B0D2390E18800EE1126 /* BRLNSDB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8B4F0B0B2390E18800EE1126 /* BRLNSDB.TTF */; };
+		8B4F0B0F2390E2D800EE1126 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4F0B0E2390E2D800EE1126 /* Default-568h@2x.png */; };
+		8B4F0B502390E88F00EE1126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B4F2390E88F00EE1126 /* SceneDelegate.swift */; };
+		8B4F0B522390ED9B00EE1126 /* Branding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B512390ED9B00EE1126 /* Branding.swift */; };
+		8B4F0B542391030300EE1126 /* CategoryCollectionDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B532391030300EE1126 /* CategoryCollectionDatasource.swift */; };
+		8B4F0B562391031F00EE1126 /* CategoryCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B552391031F00EE1126 /* CategoryCollectionDelegate.swift */; };
+		8B4F0B582391F39700EE1126 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B572391F39700EE1126 /* Extensions.swift */; };
+		BEA083EEC40EC65CF8CF8B45 /* Pods_MunchCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9821D22DB9898558B97DA813 /* Pods_MunchCoinTests.framework */; };
+		C9B92CD0ECE4BE8C7C40F4E3 /* Pods_MunchCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC019599E0F65D4907C3C638 /* Pods_MunchCoin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B0D0F64231B6B5E00CBDEF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B0D0F42231B6B5A00CBDEF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B0D0F49231B6B5A00CBDEF2;
+			remoteInfo = MunchCoin;
+		};
+		8B0D0F6F231B6B5E00CBDEF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B0D0F42231B6B5A00CBDEF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B0D0F49231B6B5A00CBDEF2;
+			remoteInfo = MunchCoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26719ECEE12490573AAB62A9 /* Pods-MunchCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoin.release.xcconfig"; path = "Target Support Files/Pods-MunchCoin/Pods-MunchCoin.release.xcconfig"; sourceTree = "<group>"; };
+		27A7292AC51BF5CB0247E185 /* Pods-MunchCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-MunchCoinTests/Pods-MunchCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67BE413CEF8A42B0905AAB79 /* Pods-MunchCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoin.debug.xcconfig"; path = "Target Support Files/Pods-MunchCoin/Pods-MunchCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		8A09177FD9340C64A7607DB2 /* Pods-MunchCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoinTests.release.xcconfig"; path = "Target Support Files/Pods-MunchCoinTests/Pods-MunchCoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B02FD27236A3A6800F9AA4D /* Eatery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatery.swift; sourceTree = "<group>"; };
+		8B02FD29236A3C2B00F9AA4D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8B0D0F4A231B6B5A00CBDEF2 /* MunchCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MunchCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0D0F4D231B6B5A00CBDEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B0D0F51231B6B5A00CBDEF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B0D0F57231B6B5A00CBDEF2 /* MunchCoin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MunchCoin.xcdatamodel; sourceTree = "<group>"; };
+		8B0D0F59231B6B5D00CBDEF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B0D0F5C231B6B5D00CBDEF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B0D0F5E231B6B5D00CBDEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0D0F63231B6B5E00CBDEF2 /* MunchCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MunchCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0D0F67231B6B5E00CBDEF2 /* MunchCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchCoinTests.swift; sourceTree = "<group>"; };
+		8B0D0F69231B6B5E00CBDEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0D0F6E231B6B5E00CBDEF2 /* MunchCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MunchCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0D0F72231B6B5E00CBDEF2 /* MunchCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchCoinUITests.swift; sourceTree = "<group>"; };
+		8B0D0F74231B6B5E00CBDEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0D0F8B231C67EB00CBDEF2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8B0D0F8D231C68C400CBDEF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B327248238F72E500630268 /* EateryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryViewController.swift; sourceTree = "<group>"; };
+		8B32724A238F735500630268 /* EateryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryTableViewDataSource.swift; sourceTree = "<group>"; };
+		8B32724C238F736600630268 /* EateryTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryTableViewDelegate.swift; sourceTree = "<group>"; };
+		8B32724E238F75EE00630268 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8B3DFA1D2325D22300147F86 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8B4F0B002390784100EE1126 /* EateryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryTableViewCell.swift; sourceTree = "<group>"; };
+		8B4F0B022390785A00EE1126 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		8B4F0B042390789100EE1126 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		8B4F0B0A2390E18800EE1126 /* BRLNSR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BRLNSR.TTF; sourceTree = "<group>"; };
+		8B4F0B0B2390E18800EE1126 /* BRLNSDB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BRLNSDB.TTF; sourceTree = "<group>"; };
+		8B4F0B0E2390E2D800EE1126 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8B4F0B4F2390E88F00EE1126 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = App/SceneDelegate.swift; sourceTree = "<group>"; };
+		8B4F0B512390ED9B00EE1126 /* Branding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branding.swift; sourceTree = "<group>"; };
+		8B4F0B532391030300EE1126 /* CategoryCollectionDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionDatasource.swift; sourceTree = "<group>"; };
+		8B4F0B552391031F00EE1126 /* CategoryCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionDelegate.swift; sourceTree = "<group>"; };
+		8B4F0B572391F39700EE1126 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9821D22DB9898558B97DA813 /* Pods_MunchCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MunchCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE0430AB67B0872945B2DF5 /* Pods-MunchCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-MunchCoinUITests/Pods-MunchCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADE8BF56424817E721278F26 /* Pods_MunchCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MunchCoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA86A1331A3159C41EE9FC2A /* Pods-MunchCoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoinUITests.debug.xcconfig"; path = "Target Support Files/Pods-MunchCoinUITests/Pods-MunchCoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC019599E0F65D4907C3C638 /* Pods_MunchCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MunchCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B0D0F47231B6B5A00CBDEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0D0F8C231C67EB00CBDEF2 /* MapKit.framework in Frameworks */,
+				C9B92CD0ECE4BE8C7C40F4E3 /* Pods_MunchCoin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0D0F60231B6B5E00CBDEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA083EEC40EC65CF8CF8B45 /* Pods_MunchCoinTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0D0F6B231B6B5E00CBDEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5181868A8EAF452920A90E /* Pods_MunchCoinUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B0D0F41231B6B5A00CBDEF2 = {
+			isa = PBXGroup;
+			children = (
+				8B4F0B0E2390E2D800EE1126 /* Default-568h@2x.png */,
+				8B0D0F4C231B6B5A00CBDEF2 /* MunchCoin */,
+				8B0D0F66231B6B5E00CBDEF2 /* MunchCoinTests */,
+				8B0D0F71231B6B5E00CBDEF2 /* MunchCoinUITests */,
+				8B0D0F4B231B6B5A00CBDEF2 /* Products */,
+				8B0D0F8A231C67EB00CBDEF2 /* Frameworks */,
+				E244E24CA426B90C681196C4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8B0D0F4B231B6B5A00CBDEF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D0F4A231B6B5A00CBDEF2 /* MunchCoin.app */,
+				8B0D0F63231B6B5E00CBDEF2 /* MunchCoinTests.xctest */,
+				8B0D0F6E231B6B5E00CBDEF2 /* MunchCoinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B0D0F4C231B6B5A00CBDEF2 /* MunchCoin */ = {
+			isa = PBXGroup;
+			children = (
+				8B4F0B4F2390E88F00EE1126 /* SceneDelegate.swift */,
+				8B0D0F8D231C68C400CBDEF2 /* GoogleService-Info.plist */,
+				8B0D0F84231B6CB900CBDEF2 /* App */,
+				8B0D0F4D231B6B5A00CBDEF2 /* AppDelegate.swift */,
+				8B0D0F5E231B6B5D00CBDEF2 /* Info.plist */,
+			);
+			path = MunchCoin;
+			sourceTree = "<group>";
+		};
+		8B0D0F66231B6B5E00CBDEF2 /* MunchCoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D0F67231B6B5E00CBDEF2 /* MunchCoinTests.swift */,
+				8B0D0F69231B6B5E00CBDEF2 /* Info.plist */,
+			);
+			path = MunchCoinTests;
+			sourceTree = "<group>";
+		};
+		8B0D0F71231B6B5E00CBDEF2 /* MunchCoinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D0F72231B6B5E00CBDEF2 /* MunchCoinUITests.swift */,
+				8B0D0F74231B6B5E00CBDEF2 /* Info.plist */,
+			);
+			path = MunchCoinUITests;
+			sourceTree = "<group>";
+		};
+		8B0D0F80231B6BD000CBDEF2 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8B653A30231E1ABD002D444E /* View Controllers */,
+				8B653A2F231E1AB1002D444E /* View Models */,
+				8B653A2E231E1AA2002D444E /* Views */,
+				8B653A2D231E1A9C002D444E /* Models */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		8B0D0F81231B6BF700CBDEF2 /* Receipt Submission */ = {
+			isa = PBXGroup;
+			children = (
+				8B653A2C231E1A6A002D444E /* Models */,
+				8B653A2B231E1A58002D444E /* Views */,
+				8B653A2A231E1A50002D444E /* View Models */,
+				8B653A29231E1A48002D444E /* View Controllers */,
+			);
+			path = "Receipt Submission";
+			sourceTree = "<group>";
+		};
+		8B0D0F82231B6C0700CBDEF2 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				8B653A24231E19DD002D444E /* View Controllers */,
+				8B653A23231E19CD002D444E /* View Models */,
+				8B567DA5231E196F009DEC20 /* Views */,
+				8B567DA3231E1953009DEC20 /* Models */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		8B0D0F83231B6C3200CBDEF2 /* Eateries */ = {
+			isa = PBXGroup;
+			children = (
+				8B653A28231E1A37002D444E /* Models */,
+				8B653A27231E1A31002D444E /* Views */,
+				8B653A26231E1A24002D444E /* View Models */,
+				8B653A25231E1A0C002D444E /* View Controllers */,
+			);
+			path = Eateries;
+			sourceTree = "<group>";
+		};
+		8B0D0F84231B6CB900CBDEF2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B4F0B092390E0D100EE1126 /* Fonts */,
+				8B4F0B062390793D00EE1126 /* ReusableViews */,
+				8B0D0F89231C604500CBDEF2 /* Concurrency */,
+				8B0D0F86231B6CD500CBDEF2 /* Networking */,
+				8B0D0F85231B6CC900CBDEF2 /* Database */,
+				8B0D0F83231B6C3200CBDEF2 /* Eateries */,
+				8B0D0F82231B6C0700CBDEF2 /* Wallet */,
+				8B0D0F81231B6BF700CBDEF2 /* Receipt Submission */,
+				8B0D0F80231B6BD000CBDEF2 /* Camera */,
+				8B0D0F51231B6B5A00CBDEF2 /* ViewController.swift */,
+				8B0D0F59231B6B5D00CBDEF2 /* Assets.xcassets */,
+				8B0D0F5B231B6B5D00CBDEF2 /* LaunchScreen.storyboard */,
+				8B0D0F56231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld */,
+				8B3DFA1D2325D22300147F86 /* Coordinator.swift */,
+				8B4F0B512390ED9B00EE1126 /* Branding.swift */,
+				8B4F0B572391F39700EE1126 /* Extensions.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8B0D0F85231B6CC900CBDEF2 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		8B0D0F86231B6CD500CBDEF2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8B32724E238F75EE00630268 /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8B0D0F89231C604500CBDEF2 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		8B0D0F8A231C67EB00CBDEF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D0F8B231C67EB00CBDEF2 /* MapKit.framework */,
+				BC019599E0F65D4907C3C638 /* Pods_MunchCoin.framework */,
+				9821D22DB9898558B97DA813 /* Pods_MunchCoinTests.framework */,
+				ADE8BF56424817E721278F26 /* Pods_MunchCoinUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B4F0B062390793D00EE1126 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		8B4F0B092390E0D100EE1126 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8B4F0B0B2390E18800EE1126 /* BRLNSDB.TTF */,
+				8B4F0B0A2390E18800EE1126 /* BRLNSR.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8B567DA3231E1953009DEC20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B567DA5231E196F009DEC20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B653A23231E19CD002D444E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8B653A24231E19DD002D444E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8B653A25231E1A0C002D444E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B327248238F72E500630268 /* EateryViewController.swift */,
+				8B32724A238F735500630268 /* EateryTableViewDataSource.swift */,
+				8B32724C238F736600630268 /* EateryTableViewDelegate.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8B653A26231E1A24002D444E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8B653A27231E1A31002D444E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B4F0B002390784100EE1126 /* EateryTableViewCell.swift */,
+				8B4F0B022390785A00EE1126 /* CategoryTableViewCell.swift */,
+				8B4F0B532391030300EE1126 /* CategoryCollectionDatasource.swift */,
+				8B4F0B552391031F00EE1126 /* CategoryCollectionDelegate.swift */,
+				8B4F0B042390789100EE1126 /* CategoryCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B653A28231E1A37002D444E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B02FD27236A3A6800F9AA4D /* Eatery.swift */,
+				8B02FD29236A3C2B00F9AA4D /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B653A29231E1A48002D444E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8B653A2A231E1A50002D444E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8B653A2B231E1A58002D444E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B653A2C231E1A6A002D444E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B653A2D231E1A9C002D444E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B653A2E231E1AA2002D444E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B653A2F231E1AB1002D444E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8B653A30231E1ABD002D444E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E244E24CA426B90C681196C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67BE413CEF8A42B0905AAB79 /* Pods-MunchCoin.debug.xcconfig */,
+				26719ECEE12490573AAB62A9 /* Pods-MunchCoin.release.xcconfig */,
+				27A7292AC51BF5CB0247E185 /* Pods-MunchCoinTests.debug.xcconfig */,
+				8A09177FD9340C64A7607DB2 /* Pods-MunchCoinTests.release.xcconfig */,
+				BA86A1331A3159C41EE9FC2A /* Pods-MunchCoinUITests.debug.xcconfig */,
+				9AE0430AB67B0872945B2DF5 /* Pods-MunchCoinUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B0D0F49231B6B5A00CBDEF2 /* MunchCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0D0F77231B6B5E00CBDEF2 /* Build configuration list for PBXNativeTarget "MunchCoin" */;
+			buildPhases = (
+				7F0994988524156BCABB036F /* [CP] Check Pods Manifest.lock */,
+				8B0D0F46231B6B5A00CBDEF2 /* Sources */,
+				8B0D0F47231B6B5A00CBDEF2 /* Frameworks */,
+				8B0D0F48231B6B5A00CBDEF2 /* Resources */,
+				536997F36E5D41E8B4C47C13 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MunchCoin;
+			productName = MunchCoin;
+			productReference = 8B0D0F4A231B6B5A00CBDEF2 /* MunchCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B0D0F62231B6B5E00CBDEF2 /* MunchCoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0D0F7A231B6B5E00CBDEF2 /* Build configuration list for PBXNativeTarget "MunchCoinTests" */;
+			buildPhases = (
+				0FEF486079DB4F2981D8FEB1 /* [CP] Check Pods Manifest.lock */,
+				8B0D0F5F231B6B5E00CBDEF2 /* Sources */,
+				8B0D0F60231B6B5E00CBDEF2 /* Frameworks */,
+				8B0D0F61231B6B5E00CBDEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B0D0F65231B6B5E00CBDEF2 /* PBXTargetDependency */,
+			);
+			name = MunchCoinTests;
+			productName = MunchCoinTests;
+			productReference = 8B0D0F63231B6B5E00CBDEF2 /* MunchCoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B0D0F6D231B6B5E00CBDEF2 /* MunchCoinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0D0F7D231B6B5E00CBDEF2 /* Build configuration list for PBXNativeTarget "MunchCoinUITests" */;
+			buildPhases = (
+				3EA1F89AB672DB9C86F28CE9 /* [CP] Check Pods Manifest.lock */,
+				8B0D0F6A231B6B5E00CBDEF2 /* Sources */,
+				8B0D0F6B231B6B5E00CBDEF2 /* Frameworks */,
+				8B0D0F6C231B6B5E00CBDEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B0D0F70231B6B5E00CBDEF2 /* PBXTargetDependency */,
+			);
+			name = MunchCoinUITests;
+			productName = MunchCoinUITests;
+			productReference = 8B0D0F6E231B6B5E00CBDEF2 /* MunchCoinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B0D0F42231B6B5A00CBDEF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Developer;
+				TargetAttributes = {
+					8B0D0F49231B6B5A00CBDEF2 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8B0D0F62231B6B5E00CBDEF2 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8B0D0F49231B6B5A00CBDEF2;
+					};
+					8B0D0F6D231B6B5E00CBDEF2 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8B0D0F49231B6B5A00CBDEF2;
+					};
+				};
+			};
+			buildConfigurationList = 8B0D0F45231B6B5A00CBDEF2 /* Build configuration list for PBXProject "MunchCoin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B0D0F41231B6B5A00CBDEF2;
+			productRefGroup = 8B0D0F4B231B6B5A00CBDEF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B0D0F49231B6B5A00CBDEF2 /* MunchCoin */,
+				8B0D0F62231B6B5E00CBDEF2 /* MunchCoinTests */,
+				8B0D0F6D231B6B5E00CBDEF2 /* MunchCoinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B0D0F48231B6B5A00CBDEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4F0B0C2390E18800EE1126 /* BRLNSR.TTF in Resources */,
+				8B0D0F5D231B6B5D00CBDEF2 /* LaunchScreen.storyboard in Resources */,
+				8B0D0F5A231B6B5D00CBDEF2 /* Assets.xcassets in Resources */,
+				8B0D0F8E231C68C500CBDEF2 /* GoogleService-Info.plist in Resources */,
+				8B4F0B0D2390E18800EE1126 /* BRLNSDB.TTF in Resources */,
+				8B4F0B0F2390E2D800EE1126 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0D0F61231B6B5E00CBDEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0D0F6C231B6B5E00CBDEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FEF486079DB4F2981D8FEB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MunchCoinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EA1F89AB672DB9C86F28CE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MunchCoinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		536997F36E5D41E8B4C47C13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0994988524156BCABB036F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MunchCoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B0D0F46231B6B5A00CBDEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0D0F52231B6B5A00CBDEF2 /* ViewController.swift in Sources */,
+				8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */,
+				8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */,
+				8B4F0B562391031F00EE1126 /* CategoryCollectionDelegate.swift in Sources */,
+				8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */,
+				8B4F0B502390E88F00EE1126 /* SceneDelegate.swift in Sources */,
+				8B4F0B582391F39700EE1126 /* Extensions.swift in Sources */,
+				8B32724F238F75EE00630268 /* Network.swift in Sources */,
+				8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */,
+				8B32724D238F736600630268 /* EateryTableViewDelegate.swift in Sources */,
+				8B327249238F72E500630268 /* EateryViewController.swift in Sources */,
+				8B4F0B542391030300EE1126 /* CategoryCollectionDatasource.swift in Sources */,
+				8B4F0B012390784100EE1126 /* EateryTableViewCell.swift in Sources */,
+				8B32724B238F735500630268 /* EateryTableViewDataSource.swift in Sources */,
+				8B4F0B032390785A00EE1126 /* CategoryTableViewCell.swift in Sources */,
+				8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */,
+				8B4F0B522390ED9B00EE1126 /* Branding.swift in Sources */,
+				8B02FD28236A3A6800F9AA4D /* Eatery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0D0F5F231B6B5E00CBDEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0D0F68231B6B5E00CBDEF2 /* MunchCoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0D0F6A231B6B5E00CBDEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0D0F73231B6B5E00CBDEF2 /* MunchCoinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B0D0F65231B6B5E00CBDEF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B0D0F49231B6B5A00CBDEF2 /* MunchCoin */;
+			targetProxy = 8B0D0F64231B6B5E00CBDEF2 /* PBXContainerItemProxy */;
+		};
+		8B0D0F70231B6B5E00CBDEF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B0D0F49231B6B5A00CBDEF2 /* MunchCoin */;
+			targetProxy = 8B0D0F6F231B6B5E00CBDEF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B0D0F5B231B6B5D00CBDEF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B0D0F5C231B6B5D00CBDEF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B0D0F75231B6B5E00CBDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B0D0F76231B6B5E00CBDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B0D0F78231B6B5E00CBDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BE413CEF8A42B0905AAB79 /* Pods-MunchCoin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RM253QV824;
+				INFOPLIST_FILE = MunchCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.munchcoin.MunchCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8B0D0F79231B6B5E00CBDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26719ECEE12490573AAB62A9 /* Pods-MunchCoin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RM253QV824;
+				INFOPLIST_FILE = MunchCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.munchcoin.MunchCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8B0D0F7B231B6B5E00CBDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27A7292AC51BF5CB0247E185 /* Pods-MunchCoinTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM253QV824;
+				INFOPLIST_FILE = MunchCoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.munchcoin.MunchCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MunchCoin.app/MunchCoin";
+			};
+			name = Debug;
+		};
+		8B0D0F7C231B6B5E00CBDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A09177FD9340C64A7607DB2 /* Pods-MunchCoinTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM253QV824;
+				INFOPLIST_FILE = MunchCoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.munchcoin.MunchCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MunchCoin.app/MunchCoin";
+			};
+			name = Release;
+		};
+		8B0D0F7E231B6B5E00CBDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA86A1331A3159C41EE9FC2A /* Pods-MunchCoinUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM253QV824;
+				INFOPLIST_FILE = MunchCoinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.munchcoin.MunchCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MunchCoin;
+			};
+			name = Debug;
+		};
+		8B0D0F7F231B6B5E00CBDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE0430AB67B0872945B2DF5 /* Pods-MunchCoinUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM253QV824;
+				INFOPLIST_FILE = MunchCoinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.munchcoin.MunchCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MunchCoin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B0D0F45231B6B5A00CBDEF2 /* Build configuration list for PBXProject "MunchCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0D0F75231B6B5E00CBDEF2 /* Debug */,
+				8B0D0F76231B6B5E00CBDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0D0F77231B6B5E00CBDEF2 /* Build configuration list for PBXNativeTarget "MunchCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0D0F78231B6B5E00CBDEF2 /* Debug */,
+				8B0D0F79231B6B5E00CBDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0D0F7A231B6B5E00CBDEF2 /* Build configuration list for PBXNativeTarget "MunchCoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0D0F7B231B6B5E00CBDEF2 /* Debug */,
+				8B0D0F7C231B6B5E00CBDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0D0F7D231B6B5E00CBDEF2 /* Build configuration list for PBXNativeTarget "MunchCoinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0D0F7E231B6B5E00CBDEF2 /* Debug */,
+				8B0D0F7F231B6B5E00CBDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B0D0F56231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B0D0F57231B6B5A00CBDEF2 /* MunchCoin.xcdatamodel */,
+			);
+			currentVersion = 8B0D0F57231B6B5A00CBDEF2 /* MunchCoin.xcdatamodel */;
+			path = MunchCoin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8B0D0F42231B6B5A00CBDEF2 /* Project object */;
+}

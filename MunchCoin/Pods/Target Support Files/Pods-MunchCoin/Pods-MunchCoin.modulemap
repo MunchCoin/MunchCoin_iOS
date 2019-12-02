@@ -1,0 +1,6 @@
+framework module Pods_MunchCoin {
+  umbrella header "Pods-MunchCoin-umbrella.h"
+
+  export *
+  module * { export * }
+}
