@@ -24,6 +24,9 @@
 		8B32724D238F736600630268 /* EateryTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724C238F736600630268 /* EateryTableViewDelegate.swift */; };
 		8B32724F238F75EE00630268 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724E238F75EE00630268 /* Network.swift */; };
 		8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFA1D2325D22300147F86 /* Coordinator.swift */; };
+		8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */; };
+		8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3122394B66600B2EE83 /* MapViewController.swift */; };
+		8B46F3182394B66700B2EE83 /* MapViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3132394B66600B2EE83 /* MapViewControllerDelegate.swift */; };
 		8B4F0B012390784100EE1126 /* EateryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B002390784100EE1126 /* EateryTableViewCell.swift */; };
 		8B4F0B032390785A00EE1126 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B022390785A00EE1126 /* CategoryTableViewCell.swift */; };
 		8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B042390789100EE1126 /* CategoryCollectionViewCell.swift */; };
@@ -83,6 +86,9 @@
 		8B32724C238F736600630268 /* EateryTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryTableViewDelegate.swift; sourceTree = "<group>"; };
 		8B32724E238F75EE00630268 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		8B3DFA1D2325D22300147F86 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerLocationDelegate.swift; sourceTree = "<group>"; };
+		8B46F3122394B66600B2EE83 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8B46F3132394B66600B2EE83 /* MapViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerDelegate.swift; sourceTree = "<group>"; };
 		8B4F0B002390784100EE1126 /* EateryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryTableViewCell.swift; sourceTree = "<group>"; };
 		8B4F0B022390785A00EE1126 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		8B4F0B042390789100EE1126 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 		8B0D0F84231B6CB900CBDEF2 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				8B46F30F2394B66600B2EE83 /* Map */,
 				8B4F0B092390E0D100EE1126 /* Fonts */,
 				8B4F0B062390793D00EE1126 /* ReusableViews */,
 				8B0D0F89231C604500CBDEF2 /* Concurrency */,
@@ -281,6 +288,40 @@
 				ADE8BF56424817E721278F26 /* Pods_MunchCoinUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B46F30F2394B66600B2EE83 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8B46F3102394B66600B2EE83 /* View Controllers */,
+				8B46F3142394B66600B2EE83 /* Models */,
+				8B46F3152394B66600B2EE83 /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8B46F3102394B66600B2EE83 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */,
+				8B46F3122394B66600B2EE83 /* MapViewController.swift */,
+				8B46F3132394B66600B2EE83 /* MapViewControllerDelegate.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8B46F3142394B66600B2EE83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B46F3152394B66600B2EE83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8B4F0B062390793D00EE1126 /* ReusableViews */ = {
@@ -445,7 +486,8 @@
 				8B0D0F46231B6B5A00CBDEF2 /* Sources */,
 				8B0D0F47231B6B5A00CBDEF2 /* Frameworks */,
 				8B0D0F48231B6B5A00CBDEF2 /* Resources */,
-				536997F36E5D41E8B4C47C13 /* [CP] Embed Pods Frameworks */,
+				B22123E528F25E6A5CE84CE6 /* [CP] Embed Pods Frameworks */,
+				C856EF946BE113935D80602A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -612,23 +654,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		536997F36E5D41E8B4C47C13 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7F0994988524156BCABB036F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -651,6 +676,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B22123E528F25E6A5CE84CE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C856EF946BE113935D80602A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MunchCoin/Pods-MunchCoin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -661,9 +720,11 @@
 				8B0D0F52231B6B5A00CBDEF2 /* ViewController.swift in Sources */,
 				8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */,
 				8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */,
+				8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */,
 				8B4F0B562391031F00EE1126 /* CategoryCollectionDelegate.swift in Sources */,
 				8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */,
 				8B4F0B502390E88F00EE1126 /* SceneDelegate.swift in Sources */,
+				8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */,
 				8B4F0B582391F39700EE1126 /* Extensions.swift in Sources */,
 				8B32724F238F75EE00630268 /* Network.swift in Sources */,
 				8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */,
@@ -676,6 +737,7 @@
 				8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */,
 				8B4F0B522390ED9B00EE1126 /* Branding.swift in Sources */,
 				8B02FD28236A3A6800F9AA4D /* Eatery.swift in Sources */,
+				8B46F3182394B66700B2EE83 /* MapViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,6 +50,7 @@ class EateryViewController: UIViewController {
         }
         
         network.get("Eateries", converted: {
+            [weak self]
             data -> Eatery in
             
             var eatery = Eatery()
@@ -58,6 +59,9 @@ class EateryViewController: UIViewController {
             eatery.verificationDate = (data["verificationDate"] as! String)
             eatery.category = (data["category"] as! DocumentReference)
             eatery.location = (data["location"] as! GeoPoint)
+            
+            self?.network.set(location: eatery.location, for: (data["id"] as! String))
+            
             
             return eatery
         }) {

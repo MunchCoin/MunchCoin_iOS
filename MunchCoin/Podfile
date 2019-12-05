@@ -4,19 +4,21 @@ platform :ios, '13.0'
 target 'MunchCoin' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for MunchCoin
+  pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Kingfisher'
+  pod 'Geofirestore'
   target 'MunchCoinTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
   target 'MunchCoinUITests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
 end

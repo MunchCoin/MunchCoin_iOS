@@ -19,6 +19,7 @@ struct Branding {
         static var black: UIColor { return UIColor(red: 0, green: 0, blue: 0, alpha: 1) }
         static var yellow: UIColor { return UIColor(red: 1, green: 216/255, blue: 97/255, alpha: 1) }
         static var grey: UIColor { return UIColor(red: 0, green: 0, blue: 0, alpha: 0.5) }
+        static var darkBlue: UIColor { return UIColor(red: 48/255, green: 50/255, blue: 61/255, alpha: 1)}
     }
     
 }

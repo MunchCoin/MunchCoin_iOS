@@ -15,5 +15,6 @@ struct Eatery {
     var category: DocumentReference!
     var location: GeoPoint!
     var verificationDate: String!
-    var categoryString: String?
+    var categoryString: String!
+    var distance: String?
 }

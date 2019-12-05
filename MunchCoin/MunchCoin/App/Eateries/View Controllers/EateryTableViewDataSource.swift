@@ -30,7 +30,7 @@ extension EateryViewController: UITableViewDataSource {
             cell.set(categories)
             cell.didSelect = {
                 [weak self] index in
-                if let row = cell.cellSelected?.row , index == row {
+                if let row = cell.cellSelected?.row, index == row {
                     let selectedCategory = self?.categories[index].type
                     self?.filteredEateries = self?.eateries.filter {
                         eatery in
