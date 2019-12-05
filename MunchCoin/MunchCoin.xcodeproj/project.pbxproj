@@ -10,6 +10,8 @@
 		6D5181868A8EAF452920A90E /* Pods_MunchCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE8BF56424817E721278F26 /* Pods_MunchCoinUITests.framework */; };
 		8B02FD28236A3A6800F9AA4D /* Eatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02FD27236A3A6800F9AA4D /* Eatery.swift */; };
 		8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02FD29236A3C2B00F9AA4D /* Category.swift */; };
+		8B0C1E5C239921C1003C4680 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C1E5B239921C1003C4680 /* CameraViewController.swift */; };
+		8B0C1E5E23992FE1003C4680 /* CameraViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C1E5D23992FE1003C4680 /* CameraViewControllerDelegate.swift */; };
 		8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F4D231B6B5A00CBDEF2 /* AppDelegate.swift */; };
 		8B0D0F52231B6B5A00CBDEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F51231B6B5A00CBDEF2 /* ViewController.swift */; };
 		8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0F56231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld */; };
@@ -66,6 +68,8 @@
 		8A09177FD9340C64A7607DB2 /* Pods-MunchCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoinTests.release.xcconfig"; path = "Target Support Files/Pods-MunchCoinTests/Pods-MunchCoinTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B02FD27236A3A6800F9AA4D /* Eatery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatery.swift; sourceTree = "<group>"; };
 		8B02FD29236A3C2B00F9AA4D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8B0C1E5B239921C1003C4680 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		8B0C1E5D23992FE1003C4680 /* CameraViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewControllerDelegate.swift; sourceTree = "<group>"; };
 		8B0D0F4A231B6B5A00CBDEF2 /* MunchCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MunchCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0D0F4D231B6B5A00CBDEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B0D0F51231B6B5A00CBDEF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -458,6 +462,8 @@
 		8B653A30231E1ABD002D444E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B0C1E5B239921C1003C4680 /* CameraViewController.swift */,
+				8B0C1E5D23992FE1003C4680 /* CameraViewControllerDelegate.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -728,6 +734,7 @@
 				8B4F0B582391F39700EE1126 /* Extensions.swift in Sources */,
 				8B32724F238F75EE00630268 /* Network.swift in Sources */,
 				8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */,
+				8B0C1E5C239921C1003C4680 /* CameraViewController.swift in Sources */,
 				8B32724D238F736600630268 /* EateryTableViewDelegate.swift in Sources */,
 				8B327249238F72E500630268 /* EateryViewController.swift in Sources */,
 				8B4F0B542391030300EE1126 /* CategoryCollectionDatasource.swift in Sources */,
@@ -735,6 +742,7 @@
 				8B32724B238F735500630268 /* EateryTableViewDataSource.swift in Sources */,
 				8B4F0B032390785A00EE1126 /* CategoryTableViewCell.swift in Sources */,
 				8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */,
+				8B0C1E5E23992FE1003C4680 /* CameraViewControllerDelegate.swift in Sources */,
 				8B4F0B522390ED9B00EE1126 /* Branding.swift in Sources */,
 				8B02FD28236A3A6800F9AA4D /* Eatery.swift in Sources */,
 				8B46F3182394B66700B2EE83 /* MapViewControllerDelegate.swift in Sources */,

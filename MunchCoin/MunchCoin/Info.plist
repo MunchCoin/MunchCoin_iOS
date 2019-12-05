@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow camera usage to submit receipts.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The MunchCoin app uses your location to help you find participating eateries near you.</string>
 	<key>CFBundleIdentifier</key>
