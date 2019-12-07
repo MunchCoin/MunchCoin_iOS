@@ -19,12 +19,14 @@ class Network {
     private var storage: Storage!
     private var references: [String: CollectionReference]!
     private var geoFirestore: GeoFirestore!
+    private var session: URLSession!
     
     private init(){
         db = Firestore.firestore()
         storage = Storage.storage()
         let geoFirestoreRef = db.collection("Eateries")
         geoFirestore = GeoFirestore(collectionRef: geoFirestoreRef)
+        session = URLSession.shared
     }
     
     func get<T>(_ type: String, query: (field: String, value: Any)? = nil, converted to: @escaping ([String:Any]) -> T, completion: @escaping ([T]?) -> ()) {
@@ -98,5 +100,20 @@ class Network {
                 print("saved")
             }
         }
+    }
+    
+    func getData(from url: URL, completion: @escaping (Data?)->()) {
+        let task = session.dataTask(with: url) {
+            data, response, error in
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                completion(nil)
+                return
+            }
+        
+            
+            completion(data)
+        }
+        
+        task.resume()
     }
 }
