@@ -30,10 +30,11 @@ class TransactionTableViewCell: UITableViewCell {
         stackView.alignment = .leading
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+//        stackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+//        stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
         stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 16).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         
         amountLabel.font = UIFont(name: Branding.Font.berlinRegular, size: 24)
 

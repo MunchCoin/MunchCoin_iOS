@@ -34,7 +34,7 @@ class BalanceTableViewCell: UITableViewCell {
         stackView.distribution = .fill
         
         balanceLabel.textColor = Branding.Color.yellow
-        balanceLabel.font = UIFont(name: Branding.Font.berlinRegular, size: 36)
+        balanceLabel.font = UIFont(name: Branding.Font.berlinDemi, size: 36)
         stackView.addArrangedSubview(balanceLabel)
         
         currencyLabel.textColor = .white

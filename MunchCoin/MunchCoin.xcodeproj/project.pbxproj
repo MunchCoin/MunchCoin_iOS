@@ -48,6 +48,10 @@
 		8B4F0B542391030300EE1126 /* CategoryCollectionDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B532391030300EE1126 /* CategoryCollectionDatasource.swift */; };
 		8B4F0B562391031F00EE1126 /* CategoryCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B552391031F00EE1126 /* CategoryCollectionDelegate.swift */; };
 		8B4F0B582391F39700EE1126 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F0B572391F39700EE1126 /* Extensions.swift */; };
+		8B514F73239C3B12004A33AE /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B514F72239C3B12004A33AE /* SettingsTableViewController.swift */; };
+		8B514F75239C3B36004A33AE /* WalletSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B514F74239C3B36004A33AE /* WalletSettingViewController.swift */; };
+		8B514F79239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B514F78239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift */; };
+		8B8C241923A549C600C39277 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C241823A549C600C39277 /* ErrorHandling.swift */; };
 		BEA083EEC40EC65CF8CF8B45 /* Pods_MunchCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9821D22DB9898558B97DA813 /* Pods_MunchCoinTests.framework */; };
 		C9B92CD0ECE4BE8C7C40F4E3 /* Pods_MunchCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC019599E0F65D4907C3C638 /* Pods_MunchCoin.framework */; };
 /* End PBXBuildFile section */
@@ -120,6 +124,10 @@
 		8B4F0B532391030300EE1126 /* CategoryCollectionDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionDatasource.swift; sourceTree = "<group>"; };
 		8B4F0B552391031F00EE1126 /* CategoryCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionDelegate.swift; sourceTree = "<group>"; };
 		8B4F0B572391F39700EE1126 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8B514F72239C3B12004A33AE /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		8B514F74239C3B36004A33AE /* WalletSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSettingViewController.swift; sourceTree = "<group>"; };
+		8B514F78239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSettingsTextFieldDelegate.swift; sourceTree = "<group>"; };
+		8B8C241823A549C600C39277 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		9821D22DB9898558B97DA813 /* Pods_MunchCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MunchCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE0430AB67B0872945B2DF5 /* Pods-MunchCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-MunchCoinUITests/Pods-MunchCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ADE8BF56424817E721278F26 /* Pods_MunchCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MunchCoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -274,6 +282,7 @@
 				8B3DFA1D2325D22300147F86 /* Coordinator.swift */,
 				8B4F0B512390ED9B00EE1126 /* Branding.swift */,
 				8B4F0B572391F39700EE1126 /* Extensions.swift */,
+				8B8C241823A549C600C39277 /* ErrorHandling.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -375,6 +384,9 @@
 		8B514F6E239C3771004A33AE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B514F72239C3B12004A33AE /* SettingsTableViewController.swift */,
+				8B514F74239C3B36004A33AE /* WalletSettingViewController.swift */,
+				8B514F78239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -789,11 +801,13 @@
 			files = (
 				8B0C1E6C2399ECF0003C4680 /* WalletTableViewPrefetchDataSource.swift in Sources */,
 				8B0D0F52231B6B5A00CBDEF2 /* ViewController.swift in Sources */,
+				8B8C241923A549C600C39277 /* ErrorHandling.swift in Sources */,
 				8B0C1E6423993609003C4680 /* WalletTableViewDelegate.swift in Sources */,
 				8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */,
 				8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */,
 				8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */,
 				8B4F0B562391031F00EE1126 /* CategoryCollectionDelegate.swift in Sources */,
+				8B514F75239C3B36004A33AE /* WalletSettingViewController.swift in Sources */,
 				8B0C1E60239935BF003C4680 /* WalletViewController.swift in Sources */,
 				8B0C1E62239935F7003C4680 /* WalletTableViewDataSource.swift in Sources */,
 				8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */,
@@ -815,6 +829,8 @@
 				8B0C1E6E2399F91D003C4680 /* EtherScanParams.swift in Sources */,
 				8B4F0B522390ED9B00EE1126 /* Branding.swift in Sources */,
 				8B02FD28236A3A6800F9AA4D /* Eatery.swift in Sources */,
+				8B514F73239C3B12004A33AE /* SettingsTableViewController.swift in Sources */,
+				8B514F79239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift in Sources */,
 				8B0C1E6A23993A0D003C4680 /* Transaction.swift in Sources */,
 				8B46F3182394B66700B2EE83 /* MapViewControllerDelegate.swift in Sources */,
 				8B0C1E6623993664003C4680 /* BalanceTableViewCell.swift in Sources */,

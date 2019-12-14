@@ -15,8 +15,6 @@ struct Transaction {
     var from: String!
 }
 
-
-
 func clean(token: String) -> String? {
     guard let amount = Double(token) else {
         return nil
