@@ -286,4 +286,5 @@ class WalletSettingViewController: UIViewController {
 
 
 extension WalletSettingViewController: UIGestureRecognizerDelegate {
+    
 }

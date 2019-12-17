@@ -24,7 +24,6 @@ extension WalletViewController: UITableViewDataSource {
         case   "Balance":
             let cell = tableView.dequeueReusableCell(withIdentifier: "BalanceCell", for: indexPath) as! BalanceTableViewCell
             cell.configure()
-            print(balance)
             let value = clean(token: balance!.value) ?? balance!.value
             cell.setBalance(value)
             cell.setCurrecny(balance!.currency)

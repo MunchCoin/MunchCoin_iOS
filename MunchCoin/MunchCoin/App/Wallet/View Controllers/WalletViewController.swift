@@ -13,13 +13,18 @@ class WalletViewController: UIViewController {
     var balance: (value:String, currency:String?)?
     var transactions: [Transaction]?
     var tableView: UITableView = UITableView()
-    var walletAddress: String? = "0x2b4fa9a2064e8e0420dff2b8d6c1d50a9c436966"
+    var walletAddress: String?
     var network: Network = Network.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        guard let address = UserDefaults.standard.string(forKey: "DefaultAddress") else {
+            configureNoAddressView()
+            return
+        }
+        self.walletAddress = address
         configureViews()
         getBalance() {
              [weak self] balance in
@@ -52,8 +57,19 @@ class WalletViewController: UIViewController {
         tableView.register(BalanceTableViewCell.self, forCellReuseIdentifier: "BalanceCell")
         tableView.register(TransactionTableViewCell.self, forCellReuseIdentifier: "TransactionCell")
         
-        
         tableView.allowsSelection = false
+    }
+    
+    func configureNoAddressView(){
+        let controller = PromptController(title: "uh oh!", message: "Add your Ethereum wallet address to view MunchCoin transactions.", prompt: "Add Address", action: {}, backgroundImage: UIImage(named: "backgroundLogo"))
+        view.addSubview(controller.view)
+        controller.view.backgroundColor = Branding.Color.yellow
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let guide = view.safeAreaLayoutGuide
+        view.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
+        view.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
+        view.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
+        view.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
     }
     
     func getBalance(completion: @escaping (String) -> ()) {
@@ -80,7 +96,6 @@ class WalletViewController: UIViewController {
            completion(result["result"]!)
         }
     }
-    
     
     func getTransactions(completion: @escaping ([Transaction], Int?)->()) {
         var transactionURL = "https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=\(EtherScanParams.contractAddress)&address=\(walletAddress!)&page=1&sort=asc&apikey=\(EtherScanParams.apiKey)"
@@ -130,12 +145,7 @@ class WalletViewController: UIViewController {
                 return transaction
             }
             
-            
             completion(transactions, decimal)
-            
         }
     }
-    
-    
-    
 }

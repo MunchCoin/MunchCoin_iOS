@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = WalletSettingViewController()
+        self.window?.rootViewController = WalletViewController()
         self.window?.makeKeyAndVisible()
         self.window?.windowScene = windowScene
     }

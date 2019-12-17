@@ -33,6 +33,10 @@
 		8B32724B238F735500630268 /* EateryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724A238F735500630268 /* EateryTableViewDataSource.swift */; };
 		8B32724D238F736600630268 /* EateryTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724C238F736600630268 /* EateryTableViewDelegate.swift */; };
 		8B32724F238F75EE00630268 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32724E238F75EE00630268 /* Network.swift */; };
+		8B35692723A701F000AC904E /* NoAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35692623A701F000AC904E /* NoAddressViewController.swift */; };
+		8B35692A23A714B800AC904E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35692923A714B800AC904E /* File.swift */; };
+		8B35692C23A7358F00AC904E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35692B23A7358F00AC904E /* Button.swift */; };
+		8B35692E23A8607C00AC904E /* BRLNSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8B35692D23A8607C00AC904E /* BRLNSB.TTF */; };
 		8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFA1D2325D22300147F86 /* Coordinator.swift */; };
 		8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */; };
 		8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3122394B66600B2EE83 /* MapViewController.swift */; };
@@ -109,6 +113,10 @@
 		8B32724A238F735500630268 /* EateryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryTableViewDataSource.swift; sourceTree = "<group>"; };
 		8B32724C238F736600630268 /* EateryTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryTableViewDelegate.swift; sourceTree = "<group>"; };
 		8B32724E238F75EE00630268 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8B35692623A701F000AC904E /* NoAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAddressViewController.swift; sourceTree = "<group>"; };
+		8B35692923A714B800AC904E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		8B35692B23A7358F00AC904E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		8B35692D23A8607C00AC904E /* BRLNSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BRLNSB.TTF; sourceTree = "<group>"; };
 		8B3DFA1D2325D22300147F86 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerLocationDelegate.swift; sourceTree = "<group>"; };
 		8B46F3122394B66600B2EE83 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +272,7 @@
 		8B0D0F84231B6CB900CBDEF2 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				8B35692823A714A100AC904E /* Common */,
 				8B514F6D239C375F004A33AE /* Settings */,
 				8B46F30F2394B66600B2EE83 /* Map */,
 				8B4F0B092390E0D100EE1126 /* Fonts */,
@@ -320,6 +329,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B35692823A714A100AC904E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8B35692923A714B800AC904E /* File.swift */,
+				8B35692B23A7358F00AC904E /* Button.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		8B46F30F2394B66600B2EE83 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				8B4F0B0B2390E18800EE1126 /* BRLNSDB.TTF */,
+				8B35692D23A8607C00AC904E /* BRLNSB.TTF */,
 				8B4F0B0A2390E18800EE1126 /* BRLNSR.TTF */,
 			);
 			path = Fonts;
@@ -444,6 +463,7 @@
 				8B0C1E61239935F7003C4680 /* WalletTableViewDataSource.swift */,
 				8B0C1E6323993609003C4680 /* WalletTableViewDelegate.swift */,
 				8B0C1E6B2399ECF0003C4680 /* WalletTableViewPrefetchDataSource.swift */,
+				8B35692623A701F000AC904E /* NoAddressViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -668,6 +688,7 @@
 			files = (
 				8B4F0B0C2390E18800EE1126 /* BRLNSR.TTF in Resources */,
 				8B0D0F5D231B6B5D00CBDEF2 /* LaunchScreen.storyboard in Resources */,
+				8B35692E23A8607C00AC904E /* BRLNSB.TTF in Resources */,
 				8B0D0F5A231B6B5D00CBDEF2 /* Assets.xcassets in Resources */,
 				8B0D0F8E231C68C500CBDEF2 /* GoogleService-Info.plist in Resources */,
 				8B4F0B0D2390E18800EE1126 /* BRLNSDB.TTF in Resources */,
@@ -804,12 +825,14 @@
 				8B8C241923A549C600C39277 /* ErrorHandling.swift in Sources */,
 				8B0C1E6423993609003C4680 /* WalletTableViewDelegate.swift in Sources */,
 				8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */,
+				8B35692C23A7358F00AC904E /* Button.swift in Sources */,
 				8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */,
 				8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */,
 				8B4F0B562391031F00EE1126 /* CategoryCollectionDelegate.swift in Sources */,
 				8B514F75239C3B36004A33AE /* WalletSettingViewController.swift in Sources */,
 				8B0C1E60239935BF003C4680 /* WalletViewController.swift in Sources */,
 				8B0C1E62239935F7003C4680 /* WalletTableViewDataSource.swift in Sources */,
+				8B35692A23A714B800AC904E /* File.swift in Sources */,
 				8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */,
 				8B4F0B502390E88F00EE1126 /* SceneDelegate.swift in Sources */,
 				8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */,
@@ -825,6 +848,7 @@
 				8B4F0B032390785A00EE1126 /* CategoryTableViewCell.swift in Sources */,
 				8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */,
 				8B0C1E6823993686003C4680 /* TransactionTableViewCell.swift in Sources */,
+				8B35692723A701F000AC904E /* NoAddressViewController.swift in Sources */,
 				8B0C1E5E23992FE1003C4680 /* CameraViewControllerDelegate.swift in Sources */,
 				8B0C1E6E2399F91D003C4680 /* EtherScanParams.swift in Sources */,
 				8B4F0B522390ED9B00EE1126 /* Branding.swift in Sources */,
