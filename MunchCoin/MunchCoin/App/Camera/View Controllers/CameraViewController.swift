@@ -14,9 +14,6 @@ class CameraViewController: UIViewController {
     var captureButton: UIButton = UIButton()
     var session: AVCaptureSession = AVCaptureSession()
     
-    
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
             configureViews()

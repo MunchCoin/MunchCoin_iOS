@@ -116,4 +116,51 @@ class Network {
         
         task.resume()
     }
+    
+    func submit(_ receipt: ReceiptSubmission, completion: @escaping (Bool, Error?)->()) {
+        let imagePath = "\(receipt.imageID!).jpg"
+        let uploadTask = storage.reference().child("Receipts").child(receipt.walletAddress).child(imagePath).putData(receipt.image)
+        
+        uploadTask.observe(.success) {
+            [weak self]
+            snapshot in
+            let imageData: [String : Any?] = [
+                "ImageID": receipt.imageID,
+                "Date": Timestamp(date: receipt.date),
+                "LocationID": receipt.locationID,
+                "CategoryID": receipt.categoryID,
+                "Amount": receipt.amount,
+                "WalletAddress": receipt.walletAddress,
+                "DateSubmitted": Timestamp(),
+                "DateReviewed": nil,
+                "MunchCoinAmount": nil,
+                "Note": nil
+            ]
+            
+            guard snapshot.error == nil else {
+                
+                completion(false, snapshot.error)
+                return
+            }
+            
+            self?.db.collection("Receipts").addDocument(data: imageData) {
+                error in
+                
+                guard let error = error else {
+                    completion(true, nil)
+                    return
+                }
+                completion(false, error)
+            }
+        }
+        
+        uploadTask.observe(.failure) {
+            snapshot in
+            
+            completion(false, snapshot.error)
+            
+        }
+    
+    
+    }
 }

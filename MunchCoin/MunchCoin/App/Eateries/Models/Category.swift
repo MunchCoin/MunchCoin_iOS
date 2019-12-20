@@ -11,4 +11,5 @@ import Foundation
 struct Category {
     var type: String!
     var imageURLString: String?
+    var id: String!
 }

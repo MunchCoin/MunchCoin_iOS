@@ -17,4 +17,6 @@ struct Eatery {
     var verificationDate: String!
     var categoryString: String!
     var distance: String?
+    var id: String!
+    var categoryID: String!
 }

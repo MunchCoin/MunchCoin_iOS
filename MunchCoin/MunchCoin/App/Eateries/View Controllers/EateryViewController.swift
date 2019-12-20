@@ -39,6 +39,7 @@ class EateryViewController: UIViewController {
             var category = Category()
             category.type = (data["type"] as! String)
             category.imageURLString = data["imageURLString"] as? String
+            category.id = (data["id"] as! String)
             return category
             
         }) {
@@ -59,8 +60,8 @@ class EateryViewController: UIViewController {
             eatery.verificationDate = (data["verificationDate"] as! String)
             eatery.category = (data["category"] as! DocumentReference)
             eatery.location = (data["location"] as! GeoPoint)
-            
-            self?.network.set(location: eatery.location, for: (data["id"] as! String))
+            eatery.id = (data["id"] as! String)
+            self?.network.set(location: eatery.location, for: eatery.id)
             
             
             return eatery
@@ -85,7 +86,8 @@ class EateryViewController: UIViewController {
                         return
                     }
                     var eatery = eatery
-                    eatery.categoryString = data["type"] as? String
+                    eatery.categoryString = (data["type"] as! String)
+                    eatery.categoryID = snapshot.documentID
                     self?.eateries.append(eatery)
 
                     if self?.eateries.count == eateries.count {

@@ -20,7 +20,7 @@ class Button: UIButton {
         heightAnchor.constraint(equalToConstant: 50).isActive = true
         widthAnchor.constraint(equalToConstant: 179).isActive = true
         titleLabel?.font = UIFont(name: Branding.Font.berlinDemi, size: 17)
-        let color = style == .light ? Branding.Color.yellow : Branding.Color.black
+        let color = Branding.Color.black
         backgroundColor = style == .light ? .white : Branding.Color.yellow
         setTitleColor(color, for: .normal)
         layer.cornerRadius = 8

@@ -37,6 +37,15 @@
 		8B35692A23A714B800AC904E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35692923A714B800AC904E /* File.swift */; };
 		8B35692C23A7358F00AC904E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35692B23A7358F00AC904E /* Button.swift */; };
 		8B35692E23A8607C00AC904E /* BRLNSB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8B35692D23A8607C00AC904E /* BRLNSB.TTF */; };
+		8B35693023A868EB00AC904E /* ReceiptSubmissionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35692F23A868EB00AC904E /* ReceiptSubmissionTableViewController.swift */; };
+		8B35693623A8695F00AC904E /* AmountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35693523A8695F00AC904E /* AmountTableViewCell.swift */; };
+		8B35693A23A86AE400AC904E /* ReceiptImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35693923A86AE400AC904E /* ReceiptImageTableViewCell.swift */; };
+		8B35693C23A86DF300AC904E /* AmountTableViewCellTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35693B23A86DF300AC904E /* AmountTableViewCellTextFieldDelegate.swift */; };
+		8B35693E23A8779E00AC904E /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35693D23A8779E00AC904E /* ButtonTableViewCell.swift */; };
+		8B35694223A889B700AC904E /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35694123A889B700AC904E /* DatePickerTableViewCell.swift */; };
+		8B35694423A889C200AC904E /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35694323A889C200AC904E /* PickerTableViewCell.swift */; };
+		8B35694823AA7D8500AC904E /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35694723AA7D8500AC904E /* Receipt.swift */; };
+		8B35694C23AC39F500AC904E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35694B23AC39F500AC904E /* LoadingViewController.swift */; };
 		8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFA1D2325D22300147F86 /* Coordinator.swift */; };
 		8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */; };
 		8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3122394B66600B2EE83 /* MapViewController.swift */; };
@@ -117,6 +126,15 @@
 		8B35692923A714B800AC904E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8B35692B23A7358F00AC904E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		8B35692D23A8607C00AC904E /* BRLNSB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BRLNSB.TTF; sourceTree = "<group>"; };
+		8B35692F23A868EB00AC904E /* ReceiptSubmissionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSubmissionTableViewController.swift; sourceTree = "<group>"; };
+		8B35693523A8695F00AC904E /* AmountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTableViewCell.swift; sourceTree = "<group>"; };
+		8B35693923A86AE400AC904E /* ReceiptImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptImageTableViewCell.swift; sourceTree = "<group>"; };
+		8B35693B23A86DF300AC904E /* AmountTableViewCellTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTableViewCellTextFieldDelegate.swift; sourceTree = "<group>"; };
+		8B35693D23A8779E00AC904E /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		8B35694123A889B700AC904E /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		8B35694323A889C200AC904E /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		8B35694723AA7D8500AC904E /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		8B35694B23AC39F500AC904E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		8B3DFA1D2325D22300147F86 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerLocationDelegate.swift; sourceTree = "<group>"; };
 		8B46F3122394B66600B2EE83 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -288,10 +306,6 @@
 				8B0D0F59231B6B5D00CBDEF2 /* Assets.xcassets */,
 				8B0D0F5B231B6B5D00CBDEF2 /* LaunchScreen.storyboard */,
 				8B0D0F56231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld */,
-				8B3DFA1D2325D22300147F86 /* Coordinator.swift */,
-				8B4F0B512390ED9B00EE1126 /* Branding.swift */,
-				8B4F0B572391F39700EE1126 /* Extensions.swift */,
-				8B8C241823A549C600C39277 /* ErrorHandling.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -332,6 +346,10 @@
 		8B35692823A714A100AC904E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8B3DFA1D2325D22300147F86 /* Coordinator.swift */,
+				8B4F0B512390ED9B00EE1126 /* Branding.swift */,
+				8B4F0B572391F39700EE1126 /* Extensions.swift */,
+				8B8C241823A549C600C39277 /* ErrorHandling.swift */,
 				8B35692923A714B800AC904E /* File.swift */,
 				8B35692B23A7358F00AC904E /* Button.swift */,
 			);
@@ -509,6 +527,8 @@
 		8B653A29231E1A48002D444E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B35692F23A868EB00AC904E /* ReceiptSubmissionTableViewController.swift */,
+				8B35694B23AC39F500AC904E /* LoadingViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -523,6 +543,12 @@
 		8B653A2B231E1A58002D444E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8B35693523A8695F00AC904E /* AmountTableViewCell.swift */,
+				8B35693B23A86DF300AC904E /* AmountTableViewCellTextFieldDelegate.swift */,
+				8B35693923A86AE400AC904E /* ReceiptImageTableViewCell.swift */,
+				8B35693D23A8779E00AC904E /* ButtonTableViewCell.swift */,
+				8B35694123A889B700AC904E /* DatePickerTableViewCell.swift */,
+				8B35694323A889C200AC904E /* PickerTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -530,6 +556,7 @@
 		8B653A2C231E1A6A002D444E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8B35694723AA7D8500AC904E /* Receipt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -823,11 +850,13 @@
 				8B0C1E6C2399ECF0003C4680 /* WalletTableViewPrefetchDataSource.swift in Sources */,
 				8B0D0F52231B6B5A00CBDEF2 /* ViewController.swift in Sources */,
 				8B8C241923A549C600C39277 /* ErrorHandling.swift in Sources */,
+				8B35694223A889B700AC904E /* DatePickerTableViewCell.swift in Sources */,
 				8B0C1E6423993609003C4680 /* WalletTableViewDelegate.swift in Sources */,
 				8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */,
 				8B35692C23A7358F00AC904E /* Button.swift in Sources */,
 				8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */,
 				8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */,
+				8B35694C23AC39F500AC904E /* LoadingViewController.swift in Sources */,
 				8B4F0B562391031F00EE1126 /* CategoryCollectionDelegate.swift in Sources */,
 				8B514F75239C3B36004A33AE /* WalletSettingViewController.swift in Sources */,
 				8B0C1E60239935BF003C4680 /* WalletViewController.swift in Sources */,
@@ -836,6 +865,7 @@
 				8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */,
 				8B4F0B502390E88F00EE1126 /* SceneDelegate.swift in Sources */,
 				8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */,
+				8B35693C23A86DF300AC904E /* AmountTableViewCellTextFieldDelegate.swift in Sources */,
 				8B4F0B582391F39700EE1126 /* Extensions.swift in Sources */,
 				8B32724F238F75EE00630268 /* Network.swift in Sources */,
 				8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */,
@@ -844,9 +874,15 @@
 				8B327249238F72E500630268 /* EateryViewController.swift in Sources */,
 				8B4F0B542391030300EE1126 /* CategoryCollectionDatasource.swift in Sources */,
 				8B4F0B012390784100EE1126 /* EateryTableViewCell.swift in Sources */,
+				8B35693623A8695F00AC904E /* AmountTableViewCell.swift in Sources */,
+				8B35693A23A86AE400AC904E /* ReceiptImageTableViewCell.swift in Sources */,
 				8B32724B238F735500630268 /* EateryTableViewDataSource.swift in Sources */,
 				8B4F0B032390785A00EE1126 /* CategoryTableViewCell.swift in Sources */,
+				8B35693023A868EB00AC904E /* ReceiptSubmissionTableViewController.swift in Sources */,
+				8B35694423A889C200AC904E /* PickerTableViewCell.swift in Sources */,
 				8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */,
+				8B35693E23A8779E00AC904E /* ButtonTableViewCell.swift in Sources */,
+				8B35694823AA7D8500AC904E /* Receipt.swift in Sources */,
 				8B0C1E6823993686003C4680 /* TransactionTableViewCell.swift in Sources */,
 				8B35692723A701F000AC904E /* NoAddressViewController.swift in Sources */,
 				8B0C1E5E23992FE1003C4680 /* CameraViewControllerDelegate.swift in Sources */,
