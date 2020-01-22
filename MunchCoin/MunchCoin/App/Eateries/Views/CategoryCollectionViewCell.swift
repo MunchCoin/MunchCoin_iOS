@@ -15,7 +15,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     private var imageFilter: UIView = UIView()
     private var containerView: UIView = UIView()
     
-//r
+    //r
     
     override var reuseIdentifier: String? { return "CatergoriesCollectionCell" }
     
@@ -45,7 +45,8 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         imageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor).isActive = true
         
         imageFilter.backgroundColor = Branding.Color.yellow
-        imageFilter.alpha = 0.0
+        imageFilter.layer.masksToBounds = true
+        imageFilter.alpha = 1.0
         imageFilter.translatesAutoresizingMaskIntoConstraints = false
         imageFilter.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
         imageFilter.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
@@ -80,7 +81,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         }
         
         imageView.kf.setImage(with: url)
+        
     }
+    
     func set(title to: String){
         categoryLabel.text = to
     }

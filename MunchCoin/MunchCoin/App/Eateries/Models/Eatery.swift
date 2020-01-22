@@ -19,4 +19,8 @@ struct Eatery {
     var distance: String?
     var id: String!
     var categoryID: String!
+    var featured: Bool!
+    var image: String?
+    var menu: String?
+    var featuredRank: Int?
 }

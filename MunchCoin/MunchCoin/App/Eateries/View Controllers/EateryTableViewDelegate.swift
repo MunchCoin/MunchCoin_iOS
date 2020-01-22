@@ -31,6 +31,14 @@ extension EateryViewController: UITableViewDelegate {
             return 60
         case "Categories":
             return 122
+        case "Featured Eateries":
+            return 138
+        case "Popular Eateries":
+            return 289
+        case "Options":
+            return 196
+        case "Info":
+            return 40
         default:
             return 43
         }
@@ -54,6 +62,7 @@ extension EateryViewController: UITableViewDelegate {
             header.textLabel?.textColor = Branding.Color.black
             header.contentView.backgroundColor = .systemBackground
             header.textLabel?.textColor = .label
+
         }
     }
     

@@ -46,7 +46,6 @@
 		8B35694423A889C200AC904E /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35694323A889C200AC904E /* PickerTableViewCell.swift */; };
 		8B35694823AA7D8500AC904E /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35694723AA7D8500AC904E /* Receipt.swift */; };
 		8B35694C23AC39F500AC904E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35694B23AC39F500AC904E /* LoadingViewController.swift */; };
-		8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFA1D2325D22300147F86 /* Coordinator.swift */; };
 		8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */; };
 		8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3122394B66600B2EE83 /* MapViewController.swift */; };
 		8B46F3182394B66700B2EE83 /* MapViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F3132394B66600B2EE83 /* MapViewControllerDelegate.swift */; };
@@ -65,6 +64,23 @@
 		8B514F75239C3B36004A33AE /* WalletSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B514F74239C3B36004A33AE /* WalletSettingViewController.swift */; };
 		8B514F79239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B514F78239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift */; };
 		8B8C241923A549C600C39277 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C241823A549C600C39277 /* ErrorHandling.swift */; };
+		8BE8CCA823D3BE8700DD0719 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCA723D3BE8700DD0719 /* Coordinator.swift */; };
+		8BE8CCAA23D3BEB900DD0719 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCA923D3BEB900DD0719 /* Router.swift */; };
+		8BE8CCAC23D3CAF000DD0719 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCAB23D3CAF000DD0719 /* AppCoordinator.swift */; };
+		8BE8CCAE23D3CB8200DD0719 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCAD23D3CB8200DD0719 /* AppRouter.swift */; };
+		8BE8CCB023D3F24C00DD0719 /* FeaturedEateriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCAF23D3F24C00DD0719 /* FeaturedEateriesTableViewCell.swift */; };
+		8BE8CCB223D3F62900DD0719 /* FeaturedEateriesCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCB123D3F62900DD0719 /* FeaturedEateriesCollectionDataSource.swift */; };
+		8BE8CCB423D4EC4600DD0719 /* FeaturedEateryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCB323D4EC4600DD0719 /* FeaturedEateryCollectionViewCell.swift */; };
+		8BE8CCB623D50E5C00DD0719 /* FeaturedEateriesCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCB523D50E5C00DD0719 /* FeaturedEateriesCollectionDelegate.swift */; };
+		8BE8CCB823D5557700DD0719 /* PopularEateryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCB723D5557700DD0719 /* PopularEateryCollectionViewCell.swift */; };
+		8BE8CCBA23D560A500DD0719 /* PopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCB923D560A500DD0719 /* PopularTableViewCell.swift */; };
+		8BE8CCBC23D5610F00DD0719 /* PopularCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCBB23D5610F00DD0719 /* PopularCollectionDataSource.swift */; };
+		8BE8CCBE23D561CD00DD0719 /* PopularCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCBD23D561CD00DD0719 /* PopularCollectionDelegate.swift */; };
+		8BE8CCC023D6798700DD0719 /* EateryOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCBF23D6798600DD0719 /* EateryOptionsTableViewCell.swift */; };
+		8BE8CCC223D679E700DD0719 /* EateryOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCC123D679E700DD0719 /* EateryOptionCollectionViewCell.swift */; };
+		8BE8CCCA23D7C9E600DD0719 /* EateryOptionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCC923D7C9E600DD0719 /* EateryOptionsDataSource.swift */; };
+		8BE8CCCC23D7C9FC00DD0719 /* EateryOptionsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCCB23D7C9FC00DD0719 /* EateryOptionsDelegate.swift */; };
+		8BE8CCCE23D7D6D500DD0719 /* EateryInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8CCCD23D7D6D500DD0719 /* EateryInfoTableViewCell.swift */; };
 		BEA083EEC40EC65CF8CF8B45 /* Pods_MunchCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9821D22DB9898558B97DA813 /* Pods_MunchCoinTests.framework */; };
 		C9B92CD0ECE4BE8C7C40F4E3 /* Pods_MunchCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC019599E0F65D4907C3C638 /* Pods_MunchCoin.framework */; };
 /* End PBXBuildFile section */
@@ -135,7 +151,6 @@
 		8B35694323A889C200AC904E /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 		8B35694723AA7D8500AC904E /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		8B35694B23AC39F500AC904E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		8B3DFA1D2325D22300147F86 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8B46F3112394B66600B2EE83 /* MapViewControllerLocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerLocationDelegate.swift; sourceTree = "<group>"; };
 		8B46F3122394B66600B2EE83 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8B46F3132394B66600B2EE83 /* MapViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +169,23 @@
 		8B514F74239C3B36004A33AE /* WalletSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSettingViewController.swift; sourceTree = "<group>"; };
 		8B514F78239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSettingsTextFieldDelegate.swift; sourceTree = "<group>"; };
 		8B8C241823A549C600C39277 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		8BE8CCA723D3BE8700DD0719 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8BE8CCA923D3BEB900DD0719 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8BE8CCAB23D3CAF000DD0719 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8BE8CCAD23D3CB8200DD0719 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		8BE8CCAF23D3F24C00DD0719 /* FeaturedEateriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedEateriesTableViewCell.swift; sourceTree = "<group>"; };
+		8BE8CCB123D3F62900DD0719 /* FeaturedEateriesCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedEateriesCollectionDataSource.swift; sourceTree = "<group>"; };
+		8BE8CCB323D4EC4600DD0719 /* FeaturedEateryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedEateryCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BE8CCB523D50E5C00DD0719 /* FeaturedEateriesCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedEateriesCollectionDelegate.swift; sourceTree = "<group>"; };
+		8BE8CCB723D5557700DD0719 /* PopularEateryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularEateryCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BE8CCB923D560A500DD0719 /* PopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewCell.swift; sourceTree = "<group>"; };
+		8BE8CCBB23D5610F00DD0719 /* PopularCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionDataSource.swift; sourceTree = "<group>"; };
+		8BE8CCBD23D561CD00DD0719 /* PopularCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionDelegate.swift; sourceTree = "<group>"; };
+		8BE8CCBF23D6798600DD0719 /* EateryOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		8BE8CCC123D679E700DD0719 /* EateryOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryOptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BE8CCC923D7C9E600DD0719 /* EateryOptionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryOptionsDataSource.swift; sourceTree = "<group>"; };
+		8BE8CCCB23D7C9FC00DD0719 /* EateryOptionsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryOptionsDelegate.swift; sourceTree = "<group>"; };
+		8BE8CCCD23D7D6D500DD0719 /* EateryInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryInfoTableViewCell.swift; sourceTree = "<group>"; };
 		9821D22DB9898558B97DA813 /* Pods_MunchCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MunchCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE0430AB67B0872945B2DF5 /* Pods-MunchCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MunchCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-MunchCoinUITests/Pods-MunchCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ADE8BF56424817E721278F26 /* Pods_MunchCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MunchCoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +338,8 @@
 				8B0D0F59231B6B5D00CBDEF2 /* Assets.xcassets */,
 				8B0D0F5B231B6B5D00CBDEF2 /* LaunchScreen.storyboard */,
 				8B0D0F56231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld */,
+				8BE8CCAB23D3CAF000DD0719 /* AppCoordinator.swift */,
+				8BE8CCAD23D3CB8200DD0719 /* AppRouter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -346,12 +380,13 @@
 		8B35692823A714A100AC904E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8B3DFA1D2325D22300147F86 /* Coordinator.swift */,
 				8B4F0B512390ED9B00EE1126 /* Branding.swift */,
 				8B4F0B572391F39700EE1126 /* Extensions.swift */,
 				8B8C241823A549C600C39277 /* ErrorHandling.swift */,
 				8B35692923A714B800AC904E /* File.swift */,
 				8B35692B23A7358F00AC904E /* Button.swift */,
+				8BE8CCA723D3BE8700DD0719 /* Coordinator.swift */,
+				8BE8CCA923D3BEB900DD0719 /* Router.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -507,10 +542,23 @@
 			isa = PBXGroup;
 			children = (
 				8B4F0B002390784100EE1126 /* EateryTableViewCell.swift */,
+				8BE8CCB923D560A500DD0719 /* PopularTableViewCell.swift */,
 				8B4F0B022390785A00EE1126 /* CategoryTableViewCell.swift */,
 				8B4F0B532391030300EE1126 /* CategoryCollectionDatasource.swift */,
 				8B4F0B552391031F00EE1126 /* CategoryCollectionDelegate.swift */,
 				8B4F0B042390789100EE1126 /* CategoryCollectionViewCell.swift */,
+				8BE8CCAF23D3F24C00DD0719 /* FeaturedEateriesTableViewCell.swift */,
+				8BE8CCB123D3F62900DD0719 /* FeaturedEateriesCollectionDataSource.swift */,
+				8BE8CCB523D50E5C00DD0719 /* FeaturedEateriesCollectionDelegate.swift */,
+				8BE8CCB323D4EC4600DD0719 /* FeaturedEateryCollectionViewCell.swift */,
+				8BE8CCCD23D7D6D500DD0719 /* EateryInfoTableViewCell.swift */,
+				8BE8CCB723D5557700DD0719 /* PopularEateryCollectionViewCell.swift */,
+				8BE8CCBB23D5610F00DD0719 /* PopularCollectionDataSource.swift */,
+				8BE8CCBD23D561CD00DD0719 /* PopularCollectionDelegate.swift */,
+				8BE8CCBF23D6798600DD0719 /* EateryOptionsTableViewCell.swift */,
+				8BE8CCC923D7C9E600DD0719 /* EateryOptionsDataSource.swift */,
+				8BE8CCCB23D7C9FC00DD0719 /* EateryOptionsDelegate.swift */,
+				8BE8CCC123D679E700DD0719 /* EateryOptionCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -848,12 +896,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0C1E6C2399ECF0003C4680 /* WalletTableViewPrefetchDataSource.swift in Sources */,
+				8BE8CCB423D4EC4600DD0719 /* FeaturedEateryCollectionViewCell.swift in Sources */,
+				8BE8CCCE23D7D6D500DD0719 /* EateryInfoTableViewCell.swift in Sources */,
+				8BE8CCB823D5557700DD0719 /* PopularEateryCollectionViewCell.swift in Sources */,
+				8BE8CCB623D50E5C00DD0719 /* FeaturedEateriesCollectionDelegate.swift in Sources */,
 				8B0D0F52231B6B5A00CBDEF2 /* ViewController.swift in Sources */,
+				8BE8CCA823D3BE8700DD0719 /* Coordinator.swift in Sources */,
 				8B8C241923A549C600C39277 /* ErrorHandling.swift in Sources */,
 				8B35694223A889B700AC904E /* DatePickerTableViewCell.swift in Sources */,
 				8B0C1E6423993609003C4680 /* WalletTableViewDelegate.swift in Sources */,
+				8BE8CCC223D679E700DD0719 /* EateryOptionCollectionViewCell.swift in Sources */,
 				8B0D0F4E231B6B5A00CBDEF2 /* AppDelegate.swift in Sources */,
 				8B35692C23A7358F00AC904E /* Button.swift in Sources */,
+				8BE8CCBA23D560A500DD0719 /* PopularTableViewCell.swift in Sources */,
 				8B0D0F58231B6B5A00CBDEF2 /* MunchCoin.xcdatamodeld in Sources */,
 				8B46F3172394B66700B2EE83 /* MapViewController.swift in Sources */,
 				8B35694C23AC39F500AC904E /* LoadingViewController.swift in Sources */,
@@ -864,11 +919,11 @@
 				8B35692A23A714B800AC904E /* File.swift in Sources */,
 				8B02FD2A236A3C2B00F9AA4D /* Category.swift in Sources */,
 				8B4F0B502390E88F00EE1126 /* SceneDelegate.swift in Sources */,
+				8BE8CCAE23D3CB8200DD0719 /* AppRouter.swift in Sources */,
 				8B46F3162394B66600B2EE83 /* MapViewControllerLocationDelegate.swift in Sources */,
 				8B35693C23A86DF300AC904E /* AmountTableViewCellTextFieldDelegate.swift in Sources */,
 				8B4F0B582391F39700EE1126 /* Extensions.swift in Sources */,
 				8B32724F238F75EE00630268 /* Network.swift in Sources */,
-				8B3DFA1E2325D22300147F86 /* Coordinator.swift in Sources */,
 				8B0C1E5C239921C1003C4680 /* CameraViewController.swift in Sources */,
 				8B32724D238F736600630268 /* EateryTableViewDelegate.swift in Sources */,
 				8B327249238F72E500630268 /* EateryViewController.swift in Sources */,
@@ -879,21 +934,30 @@
 				8B32724B238F735500630268 /* EateryTableViewDataSource.swift in Sources */,
 				8B4F0B032390785A00EE1126 /* CategoryTableViewCell.swift in Sources */,
 				8B35693023A868EB00AC904E /* ReceiptSubmissionTableViewController.swift in Sources */,
+				8BE8CCB023D3F24C00DD0719 /* FeaturedEateriesTableViewCell.swift in Sources */,
 				8B35694423A889C200AC904E /* PickerTableViewCell.swift in Sources */,
 				8B4F0B052390789100EE1126 /* CategoryCollectionViewCell.swift in Sources */,
+				8BE8CCBC23D5610F00DD0719 /* PopularCollectionDataSource.swift in Sources */,
+				8BE8CCC023D6798700DD0719 /* EateryOptionsTableViewCell.swift in Sources */,
 				8B35693E23A8779E00AC904E /* ButtonTableViewCell.swift in Sources */,
 				8B35694823AA7D8500AC904E /* Receipt.swift in Sources */,
 				8B0C1E6823993686003C4680 /* TransactionTableViewCell.swift in Sources */,
+				8BE8CCB223D3F62900DD0719 /* FeaturedEateriesCollectionDataSource.swift in Sources */,
 				8B35692723A701F000AC904E /* NoAddressViewController.swift in Sources */,
 				8B0C1E5E23992FE1003C4680 /* CameraViewControllerDelegate.swift in Sources */,
+				8BE8CCCA23D7C9E600DD0719 /* EateryOptionsDataSource.swift in Sources */,
 				8B0C1E6E2399F91D003C4680 /* EtherScanParams.swift in Sources */,
+				8BE8CCAA23D3BEB900DD0719 /* Router.swift in Sources */,
 				8B4F0B522390ED9B00EE1126 /* Branding.swift in Sources */,
 				8B02FD28236A3A6800F9AA4D /* Eatery.swift in Sources */,
 				8B514F73239C3B12004A33AE /* SettingsTableViewController.swift in Sources */,
 				8B514F79239EC6AC004A33AE /* WalletSettingsTextFieldDelegate.swift in Sources */,
 				8B0C1E6A23993A0D003C4680 /* Transaction.swift in Sources */,
+				8BE8CCBE23D561CD00DD0719 /* PopularCollectionDelegate.swift in Sources */,
 				8B46F3182394B66700B2EE83 /* MapViewControllerDelegate.swift in Sources */,
 				8B0C1E6623993664003C4680 /* BalanceTableViewCell.swift in Sources */,
+				8BE8CCAC23D3CAF000DD0719 /* AppCoordinator.swift in Sources */,
+				8BE8CCCC23D7C9FC00DD0719 /* EateryOptionsDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,27 @@ extension EateryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionTitle = sections[section]
-        return sectionTitle == "Categories" ? categories != nil ? 1 : 0 : filteredEateries?.count ?? 0
+        
+        var count = 0
+        
+        switch sectionTitle {
+        case "Categories":
+            count = categories != nil ? 1 : 0
+        case "Eateries":
+            count = filteredEateries?.count ?? 0
+        case "Featured Eateries":
+            count = filteredEateries != nil ? 1 : 0
+        case "Popular Eateries":
+            count = popularEateries != nil ? 1 : 0
+        case "Options":
+            count = 1
+        case "Info":
+            count = 1
+        default:
+            break
+        }
+        
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,9 +56,17 @@ extension EateryViewController: UITableViewDataSource {
                         eatery in
                         return eatery.categoryString == selectedCategory
                     }
+                    
                 } else {
                     self?.filteredEateries = self?.eateries ?? []
                 }
+                
+                self?.featuredEateries = self?.filteredEateries.filter { eatery in return eatery.featured }.sorted {
+                    eateryA, eateryB in
+                    
+                    return eateryA.featuredRank! < eateryB.featuredRank!
+                }
+                
                 self?.tableView.reloadData()
             }
             cell.reloadCollectionView()
@@ -50,6 +78,31 @@ extension EateryViewController: UITableViewDataSource {
             cell.set(title: eatery.name)
             cell.set(distance: "0.3mi")
             cell.set(subTitle: eatery.categoryString, and: eatery.verificationDate)
+            
+            return cell
+        case "Featured Eateries":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FeaturedCell", for: indexPath) as! FeaturedEateriesTableViewCell
+            cell.eateries = featuredEateries
+            cell.reload()
+            return cell
+            
+        case "Popular Eateries":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PopularCell", for: indexPath) as! PopularTableViewCell
+            
+            cell.eateries = popularEateries
+            
+            return cell
+
+        case "Options":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "EateryOptionsCell", for: indexPath) as! EateryOptionsTableViewCell
+            cell.reloadData()
+            return cell
+        case "Info":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "EateryInfoCell", for: indexPath) as! EateryInfoTableViewCell
+            
+            cell.categoryLabel.text = "Pizza"
+            cell.certificationLabel.text = "Cerified 10/2/19"
+            cell.phoneNumberLabel.text = "+1 (718) 796-0376"
             
             return cell
         default:

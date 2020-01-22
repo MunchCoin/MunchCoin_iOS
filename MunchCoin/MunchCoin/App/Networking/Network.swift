@@ -66,8 +66,6 @@ class Network {
     }
     
     func returnEatery(from id: String, converted to: @escaping (Eatery) -> ()) {
-        
-        
         db.collection("Eateries").whereField(FieldPath.documentID(), isEqualTo: id).getDocuments {
             snapshot, error in
             
@@ -134,7 +132,8 @@ class Network {
                 "DateSubmitted": Timestamp(),
                 "DateReviewed": nil,
                 "MunchCoinAmount": nil,
-                "Note": nil
+                "Note": nil,
+                "ReviewStatus": ReceiptSubmissionStatus.review
             ]
             
             guard snapshot.error == nil else {
@@ -160,7 +159,5 @@ class Network {
             completion(false, snapshot.error)
             
         }
-    
-    
     }
 }

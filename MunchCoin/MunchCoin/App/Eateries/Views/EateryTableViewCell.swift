@@ -20,6 +20,7 @@ class EateryTableViewCell: UITableViewCell {
     private var subTitleLabel: UILabel = UILabel()
     private var category: String?
     func configure() {
+        
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(mainStackView)
         contentView.backgroundColor = .black
